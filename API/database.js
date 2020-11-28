@@ -1,6 +1,5 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
-const db = mongoose.connection
 
 const uri = process.env.DBURI
 const options = {
@@ -9,5 +8,5 @@ const options = {
 }
 
 mongoose.connect( uri , options)
-  .then(() => console.log('connected to database'))
+  .then(() => console.log('conectado a la base de datos de la Casa Azul'))
   .catch( e => console.error('DB error:', e ))
