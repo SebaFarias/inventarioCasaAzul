@@ -2,8 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const helmet = require('helmet')
 const path = require('path')
-const itemRoutes = require('./routes/item')
-const userRoutes = require('./routes/user')
+const itemRoutes = require('./api/routes/item')
+const userRoutes = require('./api/routes/user')
 const app = express()
 
 //Configura la static path 
