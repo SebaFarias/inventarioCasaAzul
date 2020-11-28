@@ -1,5 +1,6 @@
 const app = require('./app')
 require('./database') 
+console.log('starting...')
 
 const server_port = process.env.YOUR_PORT || process.env.PORT || 8080
 const server_host = process.env.YOUR_HOST || '0.0.0.0';
