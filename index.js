@@ -1,4 +1,4 @@
-const app = require('./api/app')
+const app = require('./app')
 require('./database') 
 
 const server_port = process.env.YOUR_PORT || process.env.PORT || 8080

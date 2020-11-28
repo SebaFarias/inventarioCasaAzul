@@ -6,10 +6,17 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebaFarias/inventarioCasaAzul.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Seba Farias",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/SebaFarias/inventarioCasaAzul/issues"
+  },
+  "homepage": "https://github.com/SebaFarias/inventarioCasaAzul#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
