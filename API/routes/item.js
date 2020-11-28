@@ -12,7 +12,7 @@ router
   .get('/getItem/:itemID' , getItem)
   .get('/getItems' , getItems)
   .put('/createItem' , createItem)
-  .post('/updateItem' , updateItem)
-  .delete('/deleteItem' , deleteItem)
+  .post('/updateItem/:itemID' , updateItem)
+  .delete('/deleteItem/:itemID' , deleteItem)
 
 module.exports = router

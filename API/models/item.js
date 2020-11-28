@@ -21,14 +21,6 @@ const itemSchema = mongoose.Schema({
   valorFinal: Number,
   categorias: [String],
   pendiente: [String],
-  updated_at: {
-    type: Date,
-    default: null,
-  },
-  created_at: {
-    type: Date,
-    default: new Date(),
-  },
 },{
   timestamps: true,
   versionKey: false,
