@@ -8,5 +8,5 @@ const options = {
 }
 
 mongoose.connect( uri , options)
-  .then(() => console.log('conectado a la base de datos de la Casa Azul'))
+  .then(() => console.log('Conectado a la base de datos de la Casa Azul'))
   .catch( e => console.error('DB error:', e ))

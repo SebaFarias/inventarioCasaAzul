@@ -11,8 +11,9 @@ const itemMethods = {
           data: items
         })
       } else {
-        res.status(404).json({
+        res.json({
           message: "No existen items en el Inventario",
+          data:[]
         })
       }
     }
@@ -73,11 +74,17 @@ const itemMethods = {
           data: newItem,
         }) 
       }
-      catch(err){
-        res.status(400).json({error: err})
+      catch(err){       
+        res.status(400).json({
+          error: err,
+          message: `No pudimos agregar este item a nuestros registos debido a que ya existe un item con ${Object.keys(err.keyValue)[0]}: ${err.keyValue[Object.keys(err.keyValue)]}`,
+        })
       }
     } else {
-      res.status(400).json({message: "Hay campos obligatorios que están vacíos"})
+      res.status(400).json(
+        {
+          message: "Hay campos obligatorios que están vacíos",
+      })
     }
   },
   updateItem: async ( req , res ) => {
