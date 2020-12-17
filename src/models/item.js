@@ -7,14 +7,16 @@ const itemSchema = mongoose.Schema({
     required: true,
     unique: true,
   },
-  estado: {
-    type: String,
-    required: true,
-  },
-  lugarFisico: {
-    type: String,
-    required: true,
-  },
+  estado: String,
+  // {
+  //   type: String,
+  //   required: true,
+  // },
+  lugarFisico: String,
+  // {
+  //   type: String,
+  //   required: true,
+  // },
   descripcion: String,
   destino: String,
   valorEstimado: Number,
