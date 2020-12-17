@@ -55,7 +55,7 @@ const itemMethods = {
       categorias,
       pendiente,
     } = req.body
-    if( nombre && estado && lugarFisico){
+    if( nombre){
       try{
         const newItem = new Item({
           nombre: nombre,

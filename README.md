@@ -6,4 +6,6 @@ https://www.youtube.com/watch?v=jdHJAZ2COMY
 https://www.youtube.com/watch?v=M4JyTdM3RKM
 
 
-3 personas x pieza 1 hr
+# To Do
+[ ] Feria navideña selected as default on Destino at Formulario Nuevo
+[ ] Estado y Lugar not required at Back-end
